@@ -1,0 +1,281 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* HEADER */
+header {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #1b4eac;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #1b4eac;
+}
+
+/* SECCIONES */
+#Info {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url("/imagenes/BANNER.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background-size 0.5s ease;
+    position: relative;
+}
+
+#Info h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#Info h1::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 4px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.historia h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+}
+
+/* CONTENEDORES */
+.contenedor, .contenedor1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    flex-direction: row;
+}
+
+.contenedor1 {
+    flex-direction: row;
+}
+
+.imagen-mysql img {
+    max-width: 500px;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.text p {
+    margin: 0 0 1.5em;
+}
+
+/* IMÁGENES Y VIDEO */
+.imagen-C img {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+}
+
+/* PARA CONTAINER2 */
+
+.contenedor2 {
+    display: flex;
+    justify-content: center; /* Centra los divs horizontalmente */
+    align-items: flex-start; /* Alinea los divs al principio verticalmente */
+    gap: 20px; /* Espacio entre los dos divs */
+    height: 100vh; /* Altura completa de la ventana de visualización */
+    padding: 20px; /* Espacio interno en el contenedor principal */
+}
+
+.video-container, .image-container {
+    display: flex;
+    flex-direction: column; /* Coloca el contenido en columna */
+    align-items: center; /* Centra el contenido horizontalmente dentro de cada contenedor */
+    width: 45%; /* Ajusta el ancho según sea necesario */
+}
+
+.video-container .video iframe {
+    width: 500px; /* Asegura que el video ocupe el 100% del ancho del contenedor */
+    height: 300PX; /* Mantiene la proporción del video */
+}
+
+.image-container .imagen img {
+    width: 500px; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    height: 300PX; /* Mantiene la proporción de la imagen */
+}
+
+.texto {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify; /* Justifica el texto */
+    margin-top: 10px; /* Espacio superior entre el contenido y el texto */
+    line-height: 1.5; /* Espacio entre líneas de 1.5 */
+    width: 100%; /* Asegura que el texto ocupe todo el ancho del contenedor */
+}
+
+.texto p {
+    margin-bottom: 1.5em; /* Espacio inferior entre párrafos de 1.5 líneas */
+}
+
+
+
+
+/* BOTONES */
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.boton button {
+    background-color: #1b4eac;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 400px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+.boton button:hover {
+    background-color: rgb(17, 17, 145);
+}
+
+/* LÍNEAS */
+.linea-p {
+    border: none;
+    height: 3px;
+    background-color: #1b4eac;
+    width: 1040px;
+    margin: 30px auto;
+}
+
+.historia h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+/* FUNCIONES DEL MYSQL */
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.lista {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center;     /* Centrar verticalmente el contenido si es necesario */
+}
+
+.lista ul {
+    list-style-position: inside; /* Mueve los puntos (viñetas) hacia dentro del contenedor */
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.lista li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.usos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding:40px;
+}
+
+.usos img{
+    width: 399px;
+    height: 400px;
+}
+
+.usos h1{
+    text-align: center;
+}
+
+.usos p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pie-pagina{
+    text-align: center;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}

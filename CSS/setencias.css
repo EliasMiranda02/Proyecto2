@@ -1,0 +1,113 @@
+header {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+header .logo {
+    margin: 0;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #1b4eac;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: #1b4eac;
+}
+
+/* SECCIONES */
+#Info {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url("/imagenes/BANNER.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background-size 0.5s ease;
+    position: relative;
+}
+
+#Info h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#Info h1::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 4px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.historia h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+}
+
+.texto1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sente {
+    display: flex; /* Flexbox para organizar los elementos en fila */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 20px; /* Espacio entre la lista y el video */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.sente ul {
+    
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    width: 40%; /* Ancho de la lista */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 2; /* Espacio entre líneas */
+}
+
+.pie-pagina{
+    text-align: center;
+}
